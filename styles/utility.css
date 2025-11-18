@@ -34,3 +34,7 @@
 .text-sm {
   font: var(--text-sm);
 }
+
+.text-bl {
+  font: var(--text-bl);
+}
