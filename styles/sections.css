@@ -1,12 +1,12 @@
 section header {
   border-top: 1px solid var(--stroke-color);
-  padding-block: 12px 24px;
+  padding-block: .75rem 1.5rem;
   font: var(--text-span);
 
   & a {
       justify-self: end;
       align-items: center;
-      gap: 8px;
+      gap: .5rem;
     }
 }
 
@@ -21,7 +21,7 @@ section header {
   .card {
     position: relative;
     overflow: hidden;
-    border-radius: 4px;
+    border-radius: .25rem;
 
     &::before {
       content: "";
@@ -35,14 +35,14 @@ section header {
       position: absolute;
       bottom: 0;
 
-      padding: 24px;
+      padding: 1.5rem;
 
       &:has(.text-lg) {
-        padding: 12px;
+        padding: .75rem;
       }
 
       h2 {
-        margin-top: 8px;
+        margin-top: .5rem;
       }
     }
   }
@@ -52,11 +52,11 @@ section header {
   grid-area: weekly;
 
   &>div {
-    grid-template-columns: repeat(4, 292px);
+    grid-template-columns: repeat(4, 18.25rem);
   }
 
   img {
-    height: 160px;
+    height: 10rem;
   }
 
   figure {
@@ -64,12 +64,12 @@ section header {
 
     .content-tag {
       position: absolute;
-      top: 8px;
-      left: 8px;
+      top: .5rem;
+      left: .5rem;
     }
 
     p {
-      margin-top: 8px;
+      margin-top: .5rem;
       font-weight: 800;
     }
   }
@@ -79,7 +79,7 @@ section header {
   grid-area: ai;
 
   img {
-    width: 176px;
+    width: 11rem;
     aspect-ratio: 1/1;
     object-fit: cover;
   }
@@ -96,7 +96,7 @@ section header {
   }
 
   h3 {
-    margin-block: 8px 4px;
+    margin-block: .5rem .25rem;
   }
 }
 
@@ -105,14 +105,14 @@ section header {
  }
 
  #more {
-  margin-top: 32px;
+  margin-top: 2rem;
 
   h3 {
-    margin-top: 8px;
+    margin-top: .5rem;
   }
 
   img {
-    width: 72px;
+    width: 724.5rem;
     aspect-ratio: 1/1;
     object-fit: cover;
   }
