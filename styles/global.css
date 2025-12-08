@@ -56,7 +56,7 @@ img {
 
 .container {
   max-width: 80rem;
-  padding-inline: 2rem;
+  padding-inline: 1rem;
   margin-inline: auto;
 }
 
@@ -84,4 +84,11 @@ main {
   letter-spacing: 0.04em;
   color: var(--text-color-primary);
   box-shadow: 0 .25rem 1rem rgba(2, 6, 23, 0.25);
+}
+
+@media (width >= 80em) {
+
+  & .container {
+    padding-inline: 2rem;
+  }
 }

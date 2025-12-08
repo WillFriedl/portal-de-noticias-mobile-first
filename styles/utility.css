@@ -37,3 +37,14 @@
 .text-bl {
   font: var(--text-bl);
 }
+
+.desktop-only {
+  display: none;
+}
+
+@media (width >= 80em) {
+
+  & .desktop-only {
+    display: initial;
+  }
+}
