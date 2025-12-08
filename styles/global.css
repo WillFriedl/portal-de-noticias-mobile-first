@@ -61,8 +61,7 @@ img {
 }
 
 main {
-  margin-block: 2.5rem;
-  margin-top: 2.5rem;
+  margin-block: 1rem;
   row-gap: 5rem;
   column-gap: 2rem;
 
@@ -89,6 +88,7 @@ main {
 @media (width >= 80em) {
 
   & .container {
+    margin-block: 2.5rem;
     padding-inline: 2rem;
   }
 }

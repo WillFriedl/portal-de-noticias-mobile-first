@@ -24,8 +24,10 @@
    overflow-x: auto;
    white-space: nowrap;
    gap: 2rem;
-
+   scrollbar-width: none;
  }
+
+ 
 
  @media (width >= 80em) {
 
