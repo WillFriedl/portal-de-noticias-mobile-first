@@ -40,6 +40,10 @@ a {
 
 a:hover {
   color: var(--brand-color-light);
+
+  &:hover svg path {
+    fill: #60A5FA;
+  }
 }
 
 h1, h2, h3 {
