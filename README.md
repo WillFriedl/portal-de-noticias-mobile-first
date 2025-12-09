@@ -17,7 +17,7 @@ Durante o desenvolvimento, foram aplicados conceitos de:
 
 ## 📸 Prévia do projeto
 
-> *<img width="1432" height="807" alt="image" src="assets/images/portaldenoticias.png"/>*
+> *<img width="1432" height="807" alt="image" src="./assets/images/portaldenoticias.png"/>*
 
 ## 🚀 Como visualizar
 
