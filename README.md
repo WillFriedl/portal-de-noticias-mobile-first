@@ -1,4 +1,4 @@
-# 🌎 Desafio 04 Rocketseat — Formulário de convite
+# 🌎 Desafio 04 Rocketseat — Portal de notícias
 
 Projeto desenvolvido como parte do **Desafio 04** do curso **Full Stack**, com o objetivo de construir uma página responsiva Mobile First.
 
