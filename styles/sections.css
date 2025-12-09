@@ -1,6 +1,7 @@
 header {
   padding-bottom: .875rem;
   font: var(--text-span);
+  color: var(--text-color-secondary);
 
   & a {
       justify-self: end;
@@ -14,6 +15,7 @@ header {
   & > figure {
     
     & img {
+      width: 20.5rem;
       height: 26rem;
       object-fit: cover;
     }
@@ -45,7 +47,6 @@ header {
     }
   }
   
-  
   & .card {
     position: relative;
     overflow: hidden;
@@ -53,6 +54,7 @@ header {
 
     &::before {
       content: "";
+      max-width: 20.5rem;
       position: absolute;
       inset: 0;
       top: 50%;
@@ -108,12 +110,41 @@ header {
 }
 
 #ai {
-  grid-area: ai;
+  border-top: 1px solid var(--stroke-color);
+  margin-bottom: 2rem;
+  padding-top: .75rem;
+
+  & header h3 {
+    margin: 0;
+  }
+
+  & article {
+
+    & div:last-child {
+      
+      & h3 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
 
   & img {
-    width: 11rem;
+    width: 5rem;
     aspect-ratio: 1/1;
     object-fit: cover;
+  }
+
+  & span {
+    margin-top: .125rem;
+  }
+
+  & h3 {
+    margin-block: .5rem .25rem;
   }
 
   & p {
@@ -126,31 +157,57 @@ header {
     overflow: hidden;
     text-overflow: ellipsis;
   }
-
-  & h3 {
-    margin-block: .5rem .25rem;
-  }
 }
-
- aside {
-  grid-area: aside;
- }
 
  #more {
   margin-top: 2rem;
+  
+  & header {
+    padding-block: .75rem 0;
+  }
+  
+  & > div {
+    margin-top: 1.5rem;
+    gap: 2rem;
+  }
+  
+  & article {
+    gap: .9375rem;
 
-  & h3 {
+    & h3 {
+      display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
     margin-top: .5rem;
+    }
+
+
+    & img {
+      width: 4.5rem;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+
+    & span {
+      margin-top: .125rem;
+    }
   }
 
-  & img {
-    width: 724.5rem;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-  }
  }
 
 @media (width  >= 80em) {
+  & .desktop {
+    display: grid; 
+    grid-template-columns: 1fr 30.5rem;
+    grid-template-areas: 
+      "ai aside";
+
+    gap: 2rem;
+  }
 
   & header {
   font: var(--text-span);
@@ -158,8 +215,6 @@ header {
 
   #featured {
     grid-auto-flow: column;
-
-    border: 1px solid red;
 
     & > figure{
 
@@ -187,15 +242,40 @@ header {
         height: 3.75rem;
       }
     }
+
+    & .card {
+
+      &::before {
+        max-width: 38 rem;
+      }
+    }
   }
 
   #weekly {
+    margin-bottom: 80px;
+    /* padding-bottom: 0; */
 
     & > div {
+    height: 14.625rem;
     grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
     }
 
     & > div figure {
+      
+      & p {   
+        height: 4.125rem;
+
+        
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+
 
       & img {
         width: 18.25rem;
@@ -204,4 +284,71 @@ header {
       }
     }
   }
+
+  aside {
+    padding-bottom: 0;
+  }
+
+  #ai {
+    margin-bottom: 0;
+
+    & header {
+      padding-bottom: 1.5rem;
+    }
+
+    & article {
+      display: flex;
+
+      & div:first-child {
+        order: 2;
+      }
+      
+      & div:last-child {
+        width: 31.5rem;
+        padding-top: .375rem;
+      }
+
+      & h3 {
+        margin-block: .5rem .25rem ;
+      }
+    }
+    
+    & img {
+    width: 11rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  }
+
+  aside {
+    
+    & #ads {
+
+      & img {
+        width: 30.5rem;
+        height: 17.5rem;
+      }
+    }
+  }
+
+  #more {
+
+    & header {
+      padding-block: .75rem 0;
+    }
+
+    & > div {
+      margin-top: 1.5rem; 
+    }
+
+    & article {
+      height: 4.5rem;
+
+      & span {
+        margin-top: .125rem;
+      }
+    }
+  }
+  
 }

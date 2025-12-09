@@ -58,6 +58,7 @@ img {
   max-width: 80rem;
   padding-inline: 1rem;
   margin-inline: auto;
+
 }
 
 main {
@@ -88,7 +89,7 @@ main {
 @media (width >= 80em) {
 
   & .container {
-    margin-block: 2.5rem;
+    margin-block: 2.5rem 5rem;
     padding-inline: 2rem;
   }
 }

@@ -1,5 +1,6 @@
 #primary {
   padding-block: 1rem;
+  color: var(--text-color-primary);
 
   & div {
     display: flex;
